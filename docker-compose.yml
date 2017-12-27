@@ -15,13 +15,13 @@ services:
     depends_on:
       - postgres
     environment:
-      - PG_USER=todoapp
-      - PG_PASSWORD=todopass
-      - PG_DATABASE=todos
+      - PG_USER=trello
+      - PG_PASSWORD=trellopwd
+      - PG_DATABASE=trellodb
       - PG_HOST=postgres 
   postgres:
     image: postgres:9.6.2-alpine
     environment:
-      POSTGRES_USER: todoapp
-      POSTGRES_DB: todos
-      POSTGRES_PASSWORD: todopass
+      POSTGRES_USER: trello
+      POSTGRES_DB: trellodb
+      POSTGRES_PASSWORD: trellopwd
